@@ -12,7 +12,7 @@ namespace ResumeCreator.Models
         public string StopDate { get; set; }
         public bool IsContinue { get; set; }
         public string SchoolName { get; set; }
-        public string Departmant { get; set; }
+        public string Department { get; set; }
         public string Where { get; set; }
         public string Explanation { get; set; }
 
