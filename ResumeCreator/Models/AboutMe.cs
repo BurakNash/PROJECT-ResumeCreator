@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace CvSitesiDeneme.Models
+namespace ResumeCreator.Models
 {
     public class AboutMe
     {
@@ -13,7 +13,7 @@ namespace CvSitesiDeneme.Models
         public string Date { get; set; }
         public string Address { get; set; }
         public string Nationality { get; set; }
-       b public string Phone { get; set; }
+        public string Phone { get; set; }
         public string Mail { get; set; }
         public string Objective { get; set; }
         public string WhatIDo { get; set; }

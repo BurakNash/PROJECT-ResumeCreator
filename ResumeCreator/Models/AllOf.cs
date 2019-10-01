@@ -1,4 +1,4 @@
-﻿using CvSitesiDeneme.Models;
+﻿using ResumeCreator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +11,7 @@ namespace ResumeCreator.Models
         public int Id { get; set; }
         public virtual List<AboutMe> Aboutme { get; set; }
         public virtual List<Certification> Certificated { get; set; }
+        public virtual List<Contact> Contact { get; set; }
         public virtual List<Entry> Entry { get; set; }
         public virtual List<Education> Education { get; set; }
         public virtual List<Skill> Skills { get; set; }
