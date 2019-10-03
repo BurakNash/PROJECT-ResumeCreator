@@ -1,0 +1,42 @@
+﻿@using ResumeWeb.Models;
+@model List<AboutMe>
+<section id="about" class="about-section section-padding">
+    <div class="container">
+        <h2 class="section-title wow fadeInUp">ABOUT ME</h2>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-md-push-8">
+                    <div class="biography">
+                        <div class="myphoto">
+                            
+                        </div>
+
+
+                        <ul>
+                            <li><strong>Name</strong> @item.Name</li>
+                            <li><strong>Date of Birth:</strong> @item.Date</li>
+                            <li><strong>Address:</strong> @item.Address</li>
+                            <li><strong>Nationality:</strong> @item.Nationality</li>
+                            <li><strong>Phone:</strong> @item.Phone</li>
+                            <li><strong>E-mail:</strong> @item.Mail</li>
+                        </ul>
+
+
+                    </div>
+                </div> <!-- col-md-4 -->
+                <div class="col-md-8 col-md-pull-4">
+                    <div class="short-info wow fadeInUp">
+                        <h3>Goals</h3>
+                        <p>@item.Objective</p>
+                    </div>
+                    <div class="short-info wow fadeInUp">
+                        <h3>Experience</h3>
+                        <p>@item.WhatIDo</p>
+                       
+                    </div>
+                </div>
+            }
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>
