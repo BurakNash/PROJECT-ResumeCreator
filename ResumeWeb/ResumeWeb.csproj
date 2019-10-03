@@ -328,6 +328,7 @@
     <Content Include="Views\Home\Entry.cshtml" />
     <Content Include="Views\Home\AboutMe.cshtml" />
     <Content Include="Views\Home\Certification.cshtml" />
+    <Content Include="Views\Home\Skill.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
