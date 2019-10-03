@@ -2,7 +2,7 @@
 @model AllOf
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutCV.cshtml";
+    Layout = "~/Views/Shared/_LayoutDesign.cshtml";
 }
 <!-- Home Section -->
 @Html.Partial("Entry", Model.Entry);
@@ -39,7 +39,7 @@
 <!-- Resume Section -->
 <section id="resume" class="resume-section section-padding">
     <div class="container">
-        <h2 class="section-title wow fadeInUp">EĞİTİM</h2>
+        <h2 class="section-title wow fadeInUp">EDUCATION</h2>
         <div class="row">
             @Html.Partial("Education", Model.Education);
         </div><!-- /row -->
@@ -49,7 +49,7 @@
         <br />
         <br />
         <div class="row">
-            @Html.Partial("Certificated", Model.Certification);
+            @Html.Partial("Certification", Model.Certification);
         </div><!-- /row -->
     </div><!-- /.container -->
 </section>
