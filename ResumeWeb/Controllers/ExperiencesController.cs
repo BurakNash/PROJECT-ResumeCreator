@@ -17,7 +17,7 @@ namespace ResumeWeb.Controllers
         // GET: Experiences
         public ActionResult Index()
         {
-            return View(db.Experiances.ToList());
+            return View(db.Experiences.ToList());
         }
 
         // GET: Experiences/Details/5
@@ -27,7 +27,7 @@ namespace ResumeWeb.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Experience experience = db.Experiances.Find(id);
+            Experience experience = db.Experiences.Find(id);
             if (experience == null)
             {
                 return HttpNotFound();
@@ -50,7 +50,7 @@ namespace ResumeWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Experiances.Add(experience);
+                db.Experiences.Add(experience);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace ResumeWeb.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Experience experience = db.Experiances.Find(id);
+            Experience experience = db.Experiences.Find(id);
             if (experience == null)
             {
                 return HttpNotFound();
@@ -96,7 +96,7 @@ namespace ResumeWeb.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Experience experience = db.Experiances.Find(id);
+            Experience experience = db.Experiences.Find(id);
             if (experience == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace ResumeWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Experience experience = db.Experiances.Find(id);
-            db.Experiances.Remove(experience);
+            Experience experience = db.Experiences.Find(id);
+            db.Experiences.Remove(experience);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
