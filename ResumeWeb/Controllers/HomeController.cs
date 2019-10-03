@@ -83,6 +83,10 @@ namespace ResumeWeb.Controllers
         {
             return View();
         }
+        public ActionResult AdminPanel()
+        {
+            return View();
+        }
 
         public ActionResult Certification()
         {
