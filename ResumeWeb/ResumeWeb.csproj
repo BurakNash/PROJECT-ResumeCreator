@@ -175,6 +175,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\EducationsController.cs" />
+    <Compile Include="Controllers\EntriesController.cs" />
     <Compile Include="Controllers\ExperiencesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -309,6 +310,11 @@
     <Content Include="Views\Experiences\Details.cshtml" />
     <Content Include="Views\Experiences\Edit.cshtml" />
     <Content Include="Views\Experiences\Index.cshtml" />
+    <Content Include="Views\Entries\Create.cshtml" />
+    <Content Include="Views\Entries\Delete.cshtml" />
+    <Content Include="Views\Entries\Details.cshtml" />
+    <Content Include="Views\Entries\Edit.cshtml" />
+    <Content Include="Views\Entries\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
