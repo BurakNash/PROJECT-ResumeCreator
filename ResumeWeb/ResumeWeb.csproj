@@ -327,6 +327,7 @@
     <Content Include="Views\AboutMes\Details.cshtml" />
     <Content Include="Views\AboutMes\Edit.cshtml" />
     <Content Include="Views\AboutMes\Index.cshtml" />
+    <Content Include="Views\Home\Entry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
