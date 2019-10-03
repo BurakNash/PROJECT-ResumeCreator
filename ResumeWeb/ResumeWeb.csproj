@@ -298,6 +298,7 @@
     <Content Include="Views\Skills\Edit.cshtml" />
     <Content Include="Views\Skills\Details.cshtml" />
     <Content Include="Views\Skills\Delete.cshtml" />
+    <Content Include="Views\Educations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
