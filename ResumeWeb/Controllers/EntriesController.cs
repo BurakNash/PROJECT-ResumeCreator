@@ -10,6 +10,7 @@ using ResumeWeb.Models;
 
 namespace ResumeWeb.Controllers
 {
+    [Authorize]
     public class EntriesController : Controller
     {
         private ModelMigrations db = new ModelMigrations();
