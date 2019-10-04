@@ -344,11 +344,6 @@
     <Content Include="Views\Experiences\Details.cshtml" />
     <Content Include="Views\Experiences\Edit.cshtml" />
     <Content Include="Views\Experiences\Index.cshtml" />
-    <Content Include="Views\Entries\Create.cshtml" />
-    <Content Include="Views\Entries\Delete.cshtml" />
-    <Content Include="Views\Entries\Details.cshtml" />
-    <Content Include="Views\Entries\Edit.cshtml" />
-    <Content Include="Views\Entries\Index.cshtml" />
     <Content Include="Views\Certifications\Create.cshtml" />
     <Content Include="Views\Certifications\Delete.cshtml" />
     <Content Include="Views\Certifications\Details.cshtml" />
@@ -368,6 +363,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Shared\_LayoutDesign.cshtml" />
     <Content Include="Views\Home\AdminPanel.cshtml" />
+    <Content Include="Views\Entries\Create.cshtml" />
+    <Content Include="Views\Entries\Delete.cshtml" />
+    <Content Include="Views\Entries\Details.cshtml" />
+    <Content Include="Views\Entries\Edit.cshtml" />
+    <Content Include="Views\Entries\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,9 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-    <h2>
-        Entry
-    </h2>
+    <h2>Entry</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -26,6 +24,15 @@
         <th>
             @Html.DisplayNameFor(model => model.Introduction)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Facebook)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Linkedin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Github)
+        </th>
         <th></th>
     </tr>
 
@@ -42,6 +49,15 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Introduction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Facebook)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Linkedin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Github)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
