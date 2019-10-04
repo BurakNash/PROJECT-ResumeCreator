@@ -16,14 +16,13 @@
         @if (User.Identity.IsAuthenticated)
         {
             <ul>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.RouteLink("AboutMe", new { action = "Index", controller = "AboutMes" )</li>
                 <li>@Html.RouteLink("Skills", new { action = "Index", controller = "Skills" }) </li>
                 <li>@Html.RouteLink("AboutMe", new { action = "Index", controller = "AboutMes" }) </li>
                 <li>@Html.RouteLink("Certification", new { action = "Index", controller = "Certifications" }) </li>
                 <li>@Html.RouteLink("Education", new { action = "Index", controller = "Educations" }) </li>
                 <li>@Html.RouteLink("Entry", new { action = "Index", controller = "Entries" }) </li>
                 <li>@Html.RouteLink("Experience", new { action = "Index", controller = "Experiences" }) </li>
-                <li>@Html.RouteLink("Skill", new { action = "Index", controller = "Skills" }) </li>
             </ul>
         }
     </div>
