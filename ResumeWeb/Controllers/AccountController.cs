@@ -135,12 +135,14 @@ namespace ResumeWeb.Controllers
         }
 
         //
-        // GET: /Account/Register
+        // GET: /Account/Register !!!! DISABLED 
+        /*
         [AllowAnonymous]
         public ActionResult Register()
         {
             return View();
         }
+        */
 
         //
         // POST: /Account/Register
