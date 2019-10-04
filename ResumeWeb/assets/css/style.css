@@ -498,7 +498,11 @@ ol, ul {
 .myphoto {
     position: relative;
     background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
-    background-size: contain
+    background-size: contain;
+    max-height:50px;
+    max-width:50px
+    
+        
 }
 
     .myphoto img {
