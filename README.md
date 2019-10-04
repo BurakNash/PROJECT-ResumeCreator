@@ -1,1 +1,1 @@
-# PROJECT-ResumeCreator
+![alt text](ReadmeIntro.gif)
