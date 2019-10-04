@@ -5,9 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-    <h2>
-        Details Entry
-    </h2>
+<h2>Details</h2>
 
 <div>
     <h4>Entry</h4>
@@ -43,6 +41,30 @@
 
         <dd>
             @Html.DisplayFor(model => model.Introduction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Facebook)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Facebook)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Linkedin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Linkedin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Github)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Github)
         </dd>
 
     </dl>

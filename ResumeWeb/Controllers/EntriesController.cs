@@ -10,7 +10,6 @@ using ResumeWeb.Models;
 
 namespace ResumeWeb.Controllers
 {
-    [Authorize]
     public class EntriesController : Controller
     {
         private ModelMigrations db = new ModelMigrations();
@@ -47,7 +46,7 @@ namespace ResumeWeb.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,JobFirstName,JobLastName,Introduction")] Entry entry)
+        public ActionResult Create([Bind(Include = "ID,Name,JobFirstName,JobLastName,Introduction,Facebook,Linkedin,Github")] Entry entry)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +78,7 @@ namespace ResumeWeb.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,JobFirstName,JobLastName,Introduction")] Entry entry)
+        public ActionResult Edit([Bind(Include = "ID,Name,JobFirstName,JobLastName,Introduction,Facebook,Linkedin,Github")] Entry entry)
         {
             if (ModelState.IsValid)
             {
