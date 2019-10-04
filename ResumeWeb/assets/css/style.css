@@ -232,7 +232,7 @@ ol, ul {
 
 @media (max-width :640px) {
     .tt-fullHeight {
-        height: 560px !important
+        height: 160px !important
     }
 }
 
