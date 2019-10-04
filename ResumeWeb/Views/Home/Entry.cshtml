@@ -2,13 +2,12 @@
 @model List<Entry>
 <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
     @foreach (var item in Model)
-    {
-        
+    {   
         <div class="intro">
             <div class="intro-sub">@item.Name</div>
             <h1>@item.JobFirstName <span>@item.JobLastName</span></h1>
             <p>
-               I am Burak Koc
+               @item.Introduction
             </p>
             <div class="social-icons">
                 <ul class="list-inline">

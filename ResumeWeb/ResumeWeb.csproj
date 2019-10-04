@@ -215,6 +215,7 @@
     <Content Include="assets\css\responsive.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="assets\images\home2.jpg" />
     <Content Include="assets\js\jquery.countTo.js" />
     <Content Include="assets\js\jquery.easypiechart.js" />
     <Content Include="assets\js\jquery.fitvids.js" />
