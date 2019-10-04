@@ -10,7 +10,6 @@ using ResumeWeb.Models;
 
 namespace ResumeWeb.Controllers
 {
-    [Authorize]
     public class EducationsController : Controller
     {
         private ModelMigrations db = new ModelMigrations();
@@ -42,10 +41,12 @@ namespace ResumeWeb.Controllers
             return View();
         }
 
-        
+        // POST: Educations/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,StartDate,StopDate,IsContinue,SchoolName,Departmant,Where,Explanation")] Education education)
+        public ActionResult Create([Bind(Include = "ID,StartDate,StopDate,IsContinue,SchoolName,Department,Where,Explanation")] Education education)
         {
             if (ModelState.IsValid)
             {
@@ -72,9 +73,12 @@ namespace ResumeWeb.Controllers
             return View(education);
         }
 
+        // POST: Educations/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,StartDate,StopDate,IsContinue,SchoolName,Departmant,Where,Explanation")] Education education)
+        public ActionResult Edit([Bind(Include = "ID,StartDate,StopDate,IsContinue,SchoolName,Department,Where,Explanation")] Education education)
         {
             if (ModelState.IsValid)
             {

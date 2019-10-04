@@ -335,11 +335,6 @@
     <Content Include="Views\Skills\Edit.cshtml" />
     <Content Include="Views\Skills\Details.cshtml" />
     <Content Include="Views\Skills\Delete.cshtml" />
-    <Content Include="Views\Educations\Index.cshtml" />
-    <Content Include="Views\Educations\Create.cshtml" />
-    <Content Include="Views\Educations\Edit.cshtml" />
-    <Content Include="Views\Educations\Details.cshtml" />
-    <Content Include="Views\Educations\Delete.cshtml" />
     <Content Include="Views\Experiences\Create.cshtml" />
     <Content Include="Views\Experiences\Delete.cshtml" />
     <Content Include="Views\Experiences\Details.cshtml" />
@@ -369,6 +364,11 @@
     <Content Include="Views\Entries\Details.cshtml" />
     <Content Include="Views\Entries\Edit.cshtml" />
     <Content Include="Views\Entries\Index.cshtml" />
+    <Content Include="Views\Educations\Create.cshtml" />
+    <Content Include="Views\Educations\Delete.cshtml" />
+    <Content Include="Views\Educations\Details.cshtml" />
+    <Content Include="Views\Educations\Edit.cshtml" />
+    <Content Include="Views\Educations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
