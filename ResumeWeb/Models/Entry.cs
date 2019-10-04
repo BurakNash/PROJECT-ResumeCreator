@@ -12,5 +12,8 @@ namespace ResumeWeb.Models
         public string JobFirstName { get; set; }
         public string JobLastName { get; set; }
         public string Introduction { get; set; }
+        public string Facebook { get; set; }
+        public string Linkedin { get; set; }
+        public string Github { get; set; }
     }
 }
