@@ -10,6 +10,7 @@ using ResumeWeb.Models;
 
 namespace CvSitesiDeneme.Controllers
 {
+    [Authorize]
     public class SkillsController : Controller
     {
         private ModelMigrations db = new ModelMigrations();
