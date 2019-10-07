@@ -18,7 +18,7 @@ namespace ResumeWeb.Controllers
         // GET: Entries
         public ActionResult Index()
         {
-            return View(db.Enteries.ToList());
+            return View(db.entries.ToList());
         }
 
         // GET: Entries/Details/5
@@ -28,7 +28,7 @@ namespace ResumeWeb.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Entry entry = db.Enteries.Find(id);
+            Entry entry = db.entries.Find(id);
             if (entry == null)
             {
                 return HttpNotFound();
@@ -51,7 +51,7 @@ namespace ResumeWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Enteries.Add(entry);
+                db.entries.Add(entry);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -66,7 +66,7 @@ namespace ResumeWeb.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Entry entry = db.Enteries.Find(id);
+            Entry entry = db.entries.Find(id);
             if (entry == null)
             {
                 return HttpNotFound();
@@ -97,7 +97,7 @@ namespace ResumeWeb.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Entry entry = db.Enteries.Find(id);
+            Entry entry = db.entries.Find(id);
             if (entry == null)
             {
                 return HttpNotFound();
@@ -110,8 +110,8 @@ namespace ResumeWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Entry entry = db.Enteries.Find(id);
-            db.Enteries.Remove(entry);
+            Entry entry = db.entries.Find(id);
+            db.entries.Remove(entry);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -25,7 +25,7 @@ namespace ResumeWeb.Models
 
         public System.Data.Entity.DbSet<ResumeWeb.Models.Education> Educations { get; set; }
 
-        public System.Data.Entity.DbSet<ResumeWeb.Models.Entry> Enteries { get; set; }
+        public System.Data.Entity.DbSet<ResumeWeb.Models.Entry> entries { get; set; }
 
         public System.Data.Entity.DbSet<ResumeWeb.Models.Experience> Experiences { get; set; }
 
