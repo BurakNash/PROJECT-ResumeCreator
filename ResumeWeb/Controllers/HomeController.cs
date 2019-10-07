@@ -25,7 +25,7 @@ namespace ResumeWeb.Controllers
             all.Contact = context.Contacts.ToList();
             all.Education = context.Educations.ToList();
             all.Experience = context.Experiences.ToList();
-            all.Entry = context.Enteries.ToList();
+            all.Entry = context.entries.ToList();
             all.Skills = context.Skills.ToList();
 
             return View(all);
@@ -38,7 +38,7 @@ namespace ResumeWeb.Controllers
             all.Contact = context.Contacts.ToList();
             all.Education = context.Educations.ToList();
             all.Experience = context.Experiences.ToList();
-            all.Entry = context.Enteries.ToList();
+            all.Entry = context.entries.ToList();
             all.Skills = context.Skills.ToList();
             string server = ConfigurationManager.AppSettings["server"];
             int port = int.Parse(ConfigurationManager.AppSettings["port"]);
