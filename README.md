@@ -2,4 +2,4 @@
 <br />
 <br />
 
-<img src="(ReadmeIntro.gif" alt="Logo">
+<img src="ReadmeIntro.gif" alt="Logo">
