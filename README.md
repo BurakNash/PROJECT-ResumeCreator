@@ -1,4 +1,5 @@
 
 <br />
 <br />
-![alt text](ReadmeIntro.gif)
+
+<img src="(ReadmeIntro.gif" alt="Logo">
